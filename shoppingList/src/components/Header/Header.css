@@ -1,0 +1,21 @@
+.header-wrapper {
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-text {
+    font-weight: 500;
+    letter-spacing: 8px;
+    font-size: 2.5rem;
+    color: rgb(87, 112, 221);
+}
+
+
+.header-image {
+    width: 250px;
+    height: 250px;
+}
