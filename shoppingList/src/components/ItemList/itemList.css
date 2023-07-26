@@ -1,0 +1,24 @@
+.ItemListWrapper {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    margin: 10px auto;
+}
+
+.change-quantity {
+    border-radius: 100%;
+    padding: 0.5rem;
+    color: white;
+}
+
+.add-item {
+    background-color: var(--ligthPurple);
+}
+
+.remove-item {
+    background-color: grey;
+}
+
+.change-quantity:hover {
+    color: black;
+}

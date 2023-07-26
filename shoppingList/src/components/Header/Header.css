@@ -1,5 +1,5 @@
 .header-wrapper {
-    font-family: cursive;
+    font-family: cursive,Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;

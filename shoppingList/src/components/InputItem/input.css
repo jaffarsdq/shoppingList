@@ -9,10 +9,16 @@
 .inputItem {
     outline: none;
     border: none;
-    border-bottom: 1px solid rgb(182, 182, 182);
+    border-bottom: 2px solid rgb(182, 182, 182);
     padding: 1rem;
     width: 100%;
     flex-basis: 70%;
+    text-align: center;
+}
+
+.inputItem:focus {
+    border-bottom: 2px solid var(--ligthPurple);
+    caret-color: var(--ligthPurple);
 }
 
 .addBtn {
