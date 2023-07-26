@@ -1,4 +1,4 @@
-import './Input'
+import './input.css'
 
 
 function Input() {

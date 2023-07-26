@@ -1,0 +1,17 @@
+.item-wrapper {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.itemName {
+    font-size: 20px;
+}
+
+.itemQuantity {
+    font-size: 20px;
+    color: var(--ligthPurple);
+}
