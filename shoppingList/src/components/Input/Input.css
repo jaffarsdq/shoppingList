@@ -1,0 +1,31 @@
+.inputItem-wrapper {
+    width: 400px;
+    margin: 2rem auto;
+    display: flex;
+    gap: 1rem;
+}
+
+
+.inputItem {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    padding: 1rem;
+    width: 100%;
+    flex-basis: 70%;
+}
+
+.addBtn {
+    margin: 5px;
+    width: 20%;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(87, 112, 221);
+    color: white;
+    font-size: medium;
+    box-shadow: 1px 3px 5px grey;
+}
+
+.addBtn:hover {
+    box-shadow: none;
+}
