@@ -12,17 +12,13 @@ import { ToastContainer } from "react-toastify"
 //reducer
 import itemReducer from "../../reducers/itemReducer"
 
+// Context imports
+import { ShoppingItemsContext, ShoppingDispatchContext } from '../providers/shoppingContext';
+
 
 export default function ShoppingList() {
 
    const [shoppingItems, dispatch] = useReducer(itemReducer,[]);
-
-    function handleAddItem(itemName) {
-         dispatch({
-            type: 'add_item',
-            itemName: itemName
-         })
-    }
 
     function handleAddQuantity(itemId) {
         dispatch({
@@ -40,16 +36,19 @@ export default function ShoppingList() {
 
     return (
         <>
-            <Header/>
-            <ToastContainer/>
-            <div className="current-shopping-list">
-                <InputItem addItem={handleAddItem}/>
-                <ItemList 
-                    shoppingItems={shoppingItems}
-                    AddQuantity={handleAddQuantity}
-                    DecQuantity={handleDecQuantity}
-                />
-            </div>
+            <ShoppingItemsContext.Provider value={shoppingItems}>
+                <ShoppingDispatchContext.Provider value={dispatch}>
+                    <Header/>
+                    <ToastContainer/>
+                    <div className="current-shopping-list">
+                        <InputItem/>
+                        <ItemList 
+                            AddQuantity={handleAddQuantity}
+                            DecQuantity={handleDecQuantity}
+                        />
+                    </div>
+                </ShoppingDispatchContext.Provider>
+            </ShoppingItemsContext.Provider>
         </>
     )
 }

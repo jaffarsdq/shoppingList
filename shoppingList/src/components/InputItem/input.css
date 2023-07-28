@@ -1,4 +1,4 @@
-.inputItem-wrapper {
+.inputItem-wrapper > form {
     width: 400px;
     margin: 2rem auto;
     display: flex;
@@ -34,4 +34,10 @@
 
 .addBtn:hover {
     box-shadow: none;
+}
+
+
+.error-indication {
+    width: 400px;
+    margin: 2rem auto;
 }

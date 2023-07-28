@@ -1,4 +1,8 @@
-import React from "react"
+//hooks
+import React, { useContext } from 'react';
+
+// Context imports
+import { ShoppingItemsContext } from '../providers/shoppingContext';
 
 //components
 import Item from "../Item/Item"
@@ -13,7 +17,10 @@ import { showError } from "../../utils/toasts"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faMinus, faPlus } from '@fortawesome/free-solid-svg-icons'
 
-function itemList({shoppingItems, AddQuantity, DecQuantity}) {
+function itemList({AddQuantity, DecQuantity}) {
+
+    const shoppingItems = useContext(ShoppingItemsContext);
+
     return(
         <div className="shopping-items-wrapper">
            {
