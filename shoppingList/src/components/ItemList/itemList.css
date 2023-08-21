@@ -22,3 +22,13 @@
 .change-quantity:hover {
     color: black;
 }
+
+@media (max-width: 426px) {
+    .ItemListWrapper {
+        display: flex;
+        align-items: center;
+        width: 300px;
+        margin: 10px auto;
+    }
+    
+}

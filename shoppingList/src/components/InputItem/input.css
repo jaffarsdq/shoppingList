@@ -41,3 +41,12 @@
     width: 400px;
     margin: 2rem auto;
 }
+
+@media (max-width: 426px) {
+    .inputItem-wrapper > form {
+        width: 300px;
+        margin: 2rem auto;
+        display: flex;
+        gap: 1rem;
+    }
+}

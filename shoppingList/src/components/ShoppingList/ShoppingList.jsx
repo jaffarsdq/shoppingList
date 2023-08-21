@@ -15,6 +15,9 @@ import itemReducer from "../../reducers/itemReducer"
 // Context imports
 import { ShoppingItemsContext, ShoppingDispatchContext } from '../providers/shoppingContext';
 
+//css import
+import './ShoppingList.css'
+
 
 export default function ShoppingList() {
 

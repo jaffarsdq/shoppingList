@@ -33,7 +33,7 @@ function Input() {
     return (
         <div className="inputItem-wrapper">
             <form onSubmit={handleSubmit(handleFormSubmission)}>
-                <input 
+                <input
                     className='inputItem'
                     type="text"
                     placeholder="Add an Item..."

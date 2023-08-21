@@ -4,14 +4,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 a;
 }
 
 
 .header-text {
     font-weight: 500;
-    letter-spacing: 8px;
-    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    font-size: 2em;
     color: rgb(87, 112, 221);
+    margin: 0 auto;
 }
 
 
